@@ -1,0 +1,102 @@
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homework_5</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+
+        table, th, td {
+            border: 3px solid grey;
+            width: 500px;
+            font-size: 20px;
+
+        }
+
+        .sub {
+            color: red;
+        }
+
+        .percent {
+            color: #FF9900;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table class="center">
+    <caption>HTML tag for Table using thead, tbody and tfoot</caption>
+    <thead>
+    <tbody>
+    <tfoot>
+    <tr>
+        <th colspan="3">Purchase order: 123456789</th>
+        <th colspan="2">Name Surname - 10th Feb 2022</th>
+    </tr>
+    <tr>
+        <td colspan="2"><b>Vender:</b><br>
+            ABC XYZ Itd.<br>
+            DUMMY STREET<br>
+            BUILDING 123<br>
+            Gyumri, Armenia,<br>
+            3115
+        </td>
+        <td colspan="2"><br><b>SHEP TO:</b><br>
+            Nareg NGO<br>
+            WILSON GARDEN<br>
+            Ghorganyan Street, Building 83<br>
+        </td>
+    </tr>
+    <tr>
+        <th style="width:10%">Qty.</th>
+        <th style="width:25%">Item Code.</th>
+        <th style="width:23%">Description</th>
+        <th>Unit Price</th>
+    </tr>
+    <tr>
+        <td>100</td>
+        <td>IABCDE</td>
+        <td>Pencils</td>
+        <td>20.00</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>IN877</td>
+        <td>Motebooks</td>
+        <td>100.00</td>
+    </tr>
+    <tr>
+        <td>500</td>
+        <td>IP8675</td>
+        <td>Pens</td>
+        <td>70.00</td>
+    </tr>
+    <tr>
+        <th colspan="3" class="sub">Subtotal</th>
+        <td colspan="2">190.00</td>
+    </tr>
+    <tr>
+        <th colspan="2" class="sub">GST</th>
+        <td class="percent">5%</td>
+        <td colspan="2">9.50</td>
+    </tr>
+    <tr>
+        <th colspan="3" class="sub">Grand Total</th>
+        <td colspan="2">$ 199.50</td>
+    </tr>
+    </tfoot>
+    </tbody>
+    </thead>
+</table>
+</body>
+</html>

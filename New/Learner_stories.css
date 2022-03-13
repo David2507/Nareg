@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header_container {
+    width: 100%;
+    height: 115px;
+    background: #333333;
+
+}
+
+.header_container header {
+    width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 25px;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #BFBFBF;
+}
+
+.menu {
+    height: 20px;
+    background: black;
+    padding: 17px;
+    float: right;
+    border-radius: 15px;
+}
+
+.div_html {
+    float: left;
+    color: #cfcce0a1;
+}
+
+#li_about, #li_about1, #li_about2, #li_about3, #li_about4 {
+    color: #FF9900;
+}
+
+.div_finish a {
+    color: #FF9900;
+    text-decoration: none;
+    float: right;
+    padding: 40px;
+}
+
+.p_left {
+    float: left;
+    color: gray;
+}
+
+.p_right {
+    float: right;
+    color: gray;
+}
+
+.finish {
+    width: 100%;
+    height: 40px;
+    background: #333333;
+    clear: both;
+}
+
+.finish footer {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.center {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table, th, td {
+    border: 7px solid white;
+    vertical-align: top;
+}
+
+.text_div h3 {
+    float: left;
+}
+
+.text_div {
+    color: gray;
+}
+
+.text_div p {
+    font-size: 14px;
+}
+
+.style_img figure img {
+    width: 160px;
+    margin: 0 20px 0 0;
+}

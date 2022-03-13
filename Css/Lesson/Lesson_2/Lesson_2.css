@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Roboro-Regular;
+    src: url("Roboto-Regular.otf");
+}
+
+html {
+    font-size: 16px;
+}
+.ems li {
+    font-size: 1.3em;
+}
+.rems li {
+    font-size: 1.3rem;
+}

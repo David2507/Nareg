@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.div_center {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.div_img {
+    width: 250px;
+    float: left;
+}
+@font-face {
+    font-family: AmaticSC-Regular;
+    src: url("AmaticSC-Regular.otf");
+}
+.div_text {
+    width: 600px;
+    float: right;
+    padding: 55px;
+    font-family: AmaticSC-Regular, serif;
+    font-size: 25px;
+
+}
+.bold_h5{
+    color:hsla(285, 2%, 51%, 0.6);
+}
+
+.div_text p {
+    height: 100px;
+    color: gray;
+}
+
+.div_text h6 {
+    float: right;
+    color: gray;
+}
+
+.div_img figure img {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.div_first {
+    width: 960px;
+    height: 250px;
+    background-color: #ccc6;
+}
+
+.img_icon figure img {
+    width: 20px;
+    height: 20px;
+}
+
+.img_icon {
+    width: 30px;
+    float: left;
+}
+
+.icon {
+    width: 240px;
+    height: 40px;
+    border: 1px white solid;
+    border-bottom-color: #ccc;
+}
+
+.icon div {
+    margin: 10px 0 0 0;
+}
+
+.div_p p {
+    text-transform: uppercase;
+    color: black;
+
+}
+
+.div_icon {
+    width: 260px;
+    height: 300px;
+    border: 1px white solid;
+    border-right-color: #ccc;
+    float: left;
+}
+
+.div_img1 {
+    width: 650px;
+    height: 300px;
+}
+
+.div_img1 figure img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 0 20px 15px 0;
+}
+
+.img_center {
+    width: 650px;
+    float: right;
+
+}
+
+.div_second {
+    width: 960px;
+    height: 370px;
+    border: 1px white solid;
+    border-top-color: #ccc;
+    border-bottom-color: #ccc;
+    margin: 40px 0 0 0;
+
+}
+
+.div_second div {
+    margin: 15px 0 0 0;
+
+}
+
+.div_third {
+    width: 960px;
+    margin: 20px 0 0 0;
+
+}
+
+.div_finish_img {
+    width: 480px;
+    float: right;
+}
+
+.div_img2 figure img {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 0 10px;
+}
+
+.div_img2 {
+    width: 240px;
+    float: left;
+}
+h4{
+    color:hsla(285, 2%, 51%, 0.6);
+}
+
+.div_text2 {
+    width: 240px;
+    float: right;
+    margin: 40px 0 0 0;
+}
+
+p, h5, h2 {
+    color: #ccc;
+}

@@ -1,0 +1,83 @@
+
+.section_center {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.div_text {
+    width: 480px;
+    float: left;
+    color: #808080b3;
+    font-family: Sylfaen, serif;
+}
+
+.div_text h2 {
+    margin: 25px 0 15px 0;
+    font-family: Sylfaen, serif;
+}
+
+.div_geo {
+    height: 40px;
+}
+
+#demo2 {
+    width: 450px;
+    height: 400px;
+}
+
+.div_input {
+    width: 480px;
+    float: right;
+    margin: 25px -60px 0 0;
+}
+
+.div_input h3 {
+    color: #808080b3;
+    font-family: Sylfaen, serif;
+}
+
+.input {
+    background-color: #cfcce054;
+    border: none;
+    height: 45px;
+    width: 420px;
+    margin: 15px 0 5px 0;
+    border-radius: 15px;
+    cursor: initial;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Sylfaen, serif;
+}
+
+.textarea {
+    background-color: #cfcce054;
+    border: none;
+    height: 210px;
+    width: 420px;
+    margin: 15px 0 10px 0;
+    border-radius: 15px;
+    cursor: initial;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Sylfaen, serif;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: Sylfaen, serif;
+}
+
+.geeks {
+    margin-left: 150px;
+}
+
+.div_button {
+    height: 60px;
+}
+

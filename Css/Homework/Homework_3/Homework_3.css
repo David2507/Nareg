@@ -1,0 +1,42 @@
+.div_div {
+    width: 800px;
+    float: right;
+}
+
+.div_div div {
+    width: 500px;
+    height: 230px;
+    text-align: center;
+    border: 2px black solid;
+    border-radius: 5px;
+    margin: 80px;
+    display: none;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 450px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Sylfaen, serif;
+}
+
+.fb:hover ~ .div_div .div_info,
+.apple:hover ~ .div_div .div_info1,
+.twitter:hover ~ .div_div .div_info2,
+.google:hover ~ .div_div .div_info3,
+.youtube:hover ~ .div_div .div_info4,
+.win:hover ~ .div_div .div_info5,
+.mail:hover ~ .div_div .div_info6,
+.wi:hover ~ .div_div .div_info7,
+.html:hover ~ .div_div .div_info8 {
+    display: block;
+}
+

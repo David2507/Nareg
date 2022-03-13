@@ -1,0 +1,144 @@
+#special{
+    background: yellow;
+}
+.alert{
+   border: 1px grey solid;
+}
+.stop{
+    background: red;
+}
+.go{
+    background: green;
+}
+h2{
+
+    color: pink;
+}
+h2:first-child{
+
+    color: blue;
+}
+.list > li {
+    list-style-type: none;
+    border: 1px gray solid ;
+}
+p[title]{
+    font-size: 14px;
+}
+p[title ~='4']{
+    border: 4px green dotted;
+}
+.container:first-child p{
+   border:  1px purple dashed;
+}
+.container table{
+ border: 1px solid grey;
+}
+td{
+    width: 30px;
+    height: 30px;
+}
+tr:nth-child(even) {
+    background-color: #e1d4d4;
+}
+tr:nth-child(odd) {
+    background-color: #c3c0c9;
+}
+/*---------------------------------------------------*/
+/* էլեմենտին, որի  id-ն որ special է տվեք yellow background */
+#special{
+    background-color: yellow;
+}
+/*---------------------------------------------------*/
+/* էլեմենտին, որի  class-ն որ alert է տվեք 1px grey border */
+.alert{
+    border-width: 1px;
+    border-color: grey;
+}
+/*---------------------------------------------------*/
+/* էլեմենտին, որի  class-ն որ alert է ու ունի նաև  class stop տվեք background red */
+.alert.stop{
+    background-color: red;
+}
+/*---------------------------------------------------*/
+/* էլեմենտին, որի  class-ն որ alert է ու ունի նաև  class go տվեք background green */
+.alert.go{
+    background-color: green;
+}
+/*---------------------------------------------------*/
+/*  պարբերությանը, որն հաջորդում է h2 էլեմենտին անմիջապես կամ ոչ տվեք pink color */
+h2 ~ p{
+    color: pink;
+}
+/*---------------------------------------------------*/
+/* պարբերությանը, որն ուղղակիորեն հաջորդում է h2 էլեմենտին տվեք blue color */
+h2 + p{
+    color: blue;
+}
+/*---------------------------------------------------*/
+/* Հեռացրեք bullet-ները և ավելացրեք 1px մոխրագույն ներքևի borderմիայն ցուցակի այն դասի էլեմենտներին,
+ որոնք անմիջական երեխա են list class -ին:*/
+ul li{
+    list-style-type: none;
+}
+.list > li{
+    border-bottom: 1px solid grey;
+}
+/*---------------------------------------------------*/
+/* տվեք 14px տառաչափ այն պարբերություններին, որոնք որ ունեն title հատկություն  */
+p[title] {
+    font-size: 14px;
+}
+/*---------------------------------------------------*/
+/* այն պարբերությունը, որի title հատկությունը պարունակում է “4” թիվը,
+ տվեք  border 4px dotted green */
+p[title*="4"]{
+    border: 4px dotted green;
+}
+/* or */
+p[title~="4"]{
+    border: 4px dotted green;
+}
+/*---------------------------------------------------*/
+/* եթե container class ունեցող դիվը ունի մեկ ժառանգ պարբերություն, այդ  պարբերությանը տալ border 1px dashed purple */
+.container p:only-child{
+    border: 1px dashed purple;
+}
+/*---------------------------------------------------*/
+/* աղյուսակը որի id-ն table_example է տալ 1px solid grey border table,tr,td-ին: Td-ին տալ width 30px height 30px */
+#table_example,
+#table_example tr,
+#table_example td{
+    border: 1px solid grey;
+}
+
+#table_example td{
+    width: 30px;
+    height: 30px;
+}
+/*---------------------------------------------------*/
+/* table_example  աղյուսակի կենտ տողերին տալ  #c3c0c9 background-color */
+#table_example tr:nth-of-type(2n +1){
+    background-color: #c3c0c9;
+}
+/*or */
+#table_example tr:nth-child(odd){
+    background-color: #c3c0c9;
+}
+/*or*/
+#table_example tr:nth-last-child(odd){
+    background-color: #c3c0c9;
+}
+/*---------------------------------------------------*/
+/* table_example  աղյուսակի զույգ տողերին տալ  #e1d4d4 background-color */
+#table_example tr:nth-of-type(2n){
+    background-color: #e1d4d4;
+}
+/*or*/
+#table_example tr:nth-child(even){
+    background-color: #e1d4d4;
+}
+/*or*/
+#table_example tr:nth-last-child(even){
+    background-color: #e1d4d4;
+}
