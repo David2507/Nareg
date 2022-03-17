@@ -1,53 +1,224 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.div1 {
+    width: 500px;
+    height: 50px;
+    background-color: blue;
+    animation: anim 4s infinite;
+
 }
 
-.main_container {
-    max-width: 1024px;
-    margin: 0 auto;
+.div2 {
+    width: 500px;
+    height: 150px;
+    background-color: red;
+    animation: anim1 10s infinite;
+
 }
 
-header {
-    background-color: #101010;
+.div3 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: relative;
+    animation: anim2 10s infinite;
+    border-radius: 70px;
+    text-align: center;
+
 }
 
-header .activ {
-    background-color: black;
+.div4 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: relative;
+    animation: anim3 10s infinite;
+    border-radius: 70px;
+    text-align: center;
+    animation-delay: 4s;
+
 }
 
-header .main_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.div5 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: relative;
+    animation: 10s;
+    border-radius: 70px;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    text-align: center;
+    animation-delay: 4s;
+    animation-name: anim4;
+
 }
 
-.left_header ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+@keyframes anim {
+    25% {
+        background-color: blue;
+    }
+    40% {
+        background-color: green;
+    }
+    60% {
+        background-color: pink;
+    }
+    80% {
+        background-color: red;
+    }
+    100% {
+        background-color: #e06000;
+    }
+
 }
 
-.left_header a {
-    text-decoration: none;
-    padding: 10px;
-    display: block;
-    color: orange;
+@keyframes anim1 {
+    25% {
+        width: 30%;
+        height: 130px;
+    }
+    40% {
+        width: 60%;
+        height: 140px;
+    }
+    60% {
+        width: 80%;
+        height: 150px;
+    }
+    80% {
+        width: 50%;
+        height: 160px;
+    }
+    100% {
+        width: 40%;
+        height: 170px;
+    }
+
 }
 
-.left_header a:hover {
-    color: #fff;
+@keyframes anim2 {
+    25% {
+        background-color: red;
+        left: 0%;
+        top: 0px;
+    }
+    40% {
+        background-color: green;
+        left: 80%;
+        top: 0px;
+    }
+    60% {
+        background-color: pink;
+        left: 80%;
+        top: 200px;
+    }
+    80% {
+        background-color: blue;
+        left: 0%;
+        top: 200px;
+    }
+    100% {
+        background-color: #e06000;
+        left: 0%;
+        top: 0px;
+    }
 }
 
-.bg_green {
-    background-color: greenyellow;
+@keyframes anim3 {
+    25% {
+        background-color: red;
+        left: 0%;
+        top: 0px;
+    }
+    40% {
+        background-color: green;
+        left: 80%;
+        top: 0px;
+    }
+    60% {
+        background-color: pink;
+        left: 80%;
+        top: 200px;
+    }
+    80% {
+        background-color: blue;
+        left: 0%;
+        top: 200px;
+    }
+    100% {
+        background-color: #e06000;
+        left: 0%;
+        top: 0px;
+    }
+
 }
 
-.bg_green .main_container {
-    padding: 50px 0;
+@keyframes anim4 {
+    25% {
+        background-color: red;
+        left: 0%;
+        top: 0px;
+    }
+    40% {
+        background-color: green;
+        left: 80%;
+        top: 0px;
+    }
+    60% {
+        background-color: pink;
+        left: 80%;
+        top: 200px;
+    }
+    80% {
+        background-color: blue;
+        left: 0%;
+        top: 200px;
+    }
+    100% {
+        background-color: #e06000;
+        left: 0%;
+        top: 0px;
+    }
+
 }
-.bg_green button{
-    padding: 5px;
-    margin: 10px 0;
+
+.div_id div {
+    width: 70px;
+    height: 50px;
+    background: red;
+    animation: mymove 4s ;
+    position: relative;
+    font-weight: bold;
+    animation-fill-mode: forwards;
 }
+
+#div1 {
+    animation-timing-function: linear;
+}
+
+#div2 {
+    animation-timing-function: ease;
+}
+
+#div3 {
+    animation-timing-function: ease-in;
+}
+
+#div4 {
+    animation-timing-function: ease-out;
+}
+
+#div5 {
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 300px;
+        background-color: blue;
+    }
+}
+
+

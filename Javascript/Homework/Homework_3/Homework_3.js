@@ -43,7 +43,8 @@ console.log("lenght(" + b + ")=" + b.length + "\n" + "lenght(" + b1 + ")=" + b1.
 console.log("Exercise 129 :");
 let a1 = "and";
 let a2 = "or";
-console.log(a1 + "+" + a2 + "+" + "!!!=8");
+let a3 = a1.length + a2.length;
+console.log(a1 + "+" + a2 + "+" + "!!!=" + a3 + 3);
 
 
 console.log("Exercise 130 :");
