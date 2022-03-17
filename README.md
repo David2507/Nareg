@@ -1,4 +1,3 @@
-#Nareg
 ### Name: Davit Minasyan
 ### Age: 21
 ### Bio: I'm a student
