@@ -1,0 +1,106 @@
+.left_div {
+    width: 750px;
+    height: 500px;
+    float: left;
+}
+
+.right_div {
+    width: 750px;
+    height: 500px;
+    float: right;
+}
+
+.div_red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: div1 7s infinite;
+    border-radius: 25px 0;
+}
+
+.div_blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    float: right;
+    animation: div2 7s infinite;
+    border-radius: 25px 0;
+}
+
+.div_red {
+    animation-timing-function: linear;
+}
+
+.div_blue {
+    animation-timing-function: linear;
+}
+
+@keyframes div1 {
+    0% {
+        background-color: red;
+        left: 0%;
+        top: 0px;
+    }
+    25% {
+        background-color: green;
+        left: 85%;
+        top: 0px;
+        transform: rotate(0);
+    }
+    50% {
+        background-color: green;
+        left: 85%;
+        top: 400px;
+        transform: rotate(360deg);
+    }
+    75% {
+        background-color: tomato;
+        left: 0%;
+        top: 400px;
+        transform: rotate(360deg);
+    }
+    100% {
+        background-color: red;
+        left: 0%;
+        top: 0px;
+        transform : rotate(360deg);
+    }
+
+}
+
+@keyframes div2 {
+    0% {
+        background-color: blue;
+        right: 0%;
+        top: 0px;
+
+    }
+    25% {
+        background-color: green;
+        right: 85%;
+        top: 0px;
+        transform: rotate(0);
+    }
+    50% {
+        background-color: green;
+        right: 85%;
+        top: 400px;
+        transform: rotate(360deg);
+
+    }
+    75% {
+        background-color: aqua;
+        right: 0%;
+        top: 400px;
+        transform: rotate(360deg);
+    }
+    100% {
+        background-color: blue;
+        right: 0%;
+        top: 0px;
+        transform: rotate(360deg);
+    }
+
+}
