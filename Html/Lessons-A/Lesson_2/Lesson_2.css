@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-div {
+    display: flex;
+    /*flex-wrap: nowrap;*/
+    background-color: blue;
+    /*flex-direction: row;*/
+    align-items: stretch;
+    height: 300px;
+}
+
+.flex-div > div {
+    width: 150px;
+    font-size: 25px;
+    background-color: powderblue;
+    margin: 15px;
+    text-align: center;
+    line-height: 60px;
+    color: #e06000;
+}
+.fl_shrink{
+    flex-shrink: 0;
+}
+.fl_self{
+    align-self: center;
+}
