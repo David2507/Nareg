@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.l_div {
+    width: 700px;
+    height: 650px;
+    margin: 1px 1px 1px 100px;
+}
+
+span {
+    color: gray;
+}
+
+.l_div img {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 90px;
+}
+
+.center {
+    display: flex;
+    padding: 5%;
+}
+
+.center div {
+
+}
+
+.r_div {
+    width: 800px;
+    height: 700px;
+    background: url(Photo/slide-a.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.log {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+
+.sig {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.div_menu a {
+    text-decoration: none;
+    float: left;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    list-style-type: none;
+    font-size: 12px;
+
+
+}
+
+.div_menu {
+    margin-left: 25%;
+}
+
+.div_input {
+    margin: 50px 0 50px 20px;
+}
+
+.div_input .rem {
+    margin: 40px 1px 30px 1px;
+}
+
+.div_input .em input {
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+    border: 2px solid gray;
+    border-bottom-style: none;
+}
+
+.div_input .em1 input {
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+}
+
+.div_fin input {
+    background: none;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.div_fin {
+    margin-top: 90%;
+    margin-left: 65%;
+}
+
+.red {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 43%;
+    border-radius: 50%;
+}
+
+.red i {
+    margin-top: 32%;
+    margin-left: 40%;
+    color: white;
+    font-size: 30px;
+}
+
+.rem a {
+    margin-left: 25%;
+    text-decoration: none;
+    color: black;
+}
+
+.div_img h2 {
+    margin-top: 5%;
+}
