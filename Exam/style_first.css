@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Hurrican;
+    src: url(fonts/Hurricane-Regular.ttf);
+}
+
+@font-face {
+    font-family: Pomp;
+    src: url('fonts/Pompadour Regular.ttf');
+}
+
+h3, p {
+    font-family: Hurrican;
+}
+
+.div_footer p {
+    font-family: Pomp;
+}
+
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 3%;
+}
+
+.div_menu {
+    width: 800px;
+
+}
+
+.div_menu a {
+    float: left;
+    margin-left: 70px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.div_menu ul li:hover {
+    color: blue;
+    border-bottom: 1px solid red;
+}
+
+.div_logo {
+    width: 800px;
+
+}
+
+.first {
+    display: flex;
+    height: 210px;
+}
+
+.second {
+    display: flex;
+}
+
+.div {
+    width: 100%;
+    height: 550px;
+    padding: 5% 25%;
+
+}
+
+.text {
+    width: 100%;
+    background-color: #8080806b;
+}
+
+.div_text {
+    width: 380px;
+    height: 200px;
+    background-color: chocolate;
+    padding: 10px;
+}
+
+.div1_text {
+    width: 380px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.div1_text p {
+    margin-top: 30px;
+}
+
+.div_text p {
+    margin-top: 30px;
+}
+
+.text h1 {
+    text-align: center;
+}
+
+.second .div_text {
+    border-radius: 10px;
+}
+
+.online {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    padding: 5% 15%;
+}
+
+.online div {
+    margin: 0 25px;
+}
+
+.text1 {
+    width: 300px;
+    height: 400px;
+
+}
+
+.text1 a {
+    color: black;
+}
+
+.text1 h3 {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.text1 img {
+    width: 300px;
+    height: 400px;
+}
+
+.first .div_text {
+    margin: 0 10px 0 0;
+}
+
+.second .div1_text {
+    margin: 0 10px 0 0;
+}
+
+
+.div_footer {
+    width: 100%;
+    height: 250px;
+    background-color: gray;
+
+}
+
+.div_footer p {
+    width: 500px;
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+    padding: 40px;
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Hurrican;
+    src: url(fonts/Hurricane-Regular.ttf);
+}
+
+@font-face {
+    font-family: Pomp;
+    src: url('fonts/Pompadour Regular.ttf');
+}
+
+h3, p {
+    font-family: Hurrican;
+}
+
+.div_footer p {
+    font-family: Pomp;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 3%;
+}
+
+.div_menu {
+    width: 800px;
+
+}
+
+.div_menu a {
+    float: left;
+    margin-left: 70px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+.div_menu ul li:hover {
+    color: blue;
+    border-bottom: 1px solid red;
+}
+
+.div_logo {
+    width: 800px;
+
+}
+
+.div_center {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.div_center .img1 {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+}
+
+.div_center .img2 {
+    width: 805px;
+    height: 600px;
+    position: absolute;
+    margin-left: 47%;
+}
+
+.div_input {
+    position: absolute;
+    padding: 10%;
+    width: 600px;
+    color: white;
+    height: 650px;
+
+}
+
+.div_input a {
+    color: white;
+
+}
+
+.div_input h1 {
+    font-size: 50px;
+    margin: 0 0 40px 0;
+}
+
+.div_input input {
+    color: #a0c6c4;
+    margin: 40px 0 15px 0;
+}
+
+.button {
+    background-color: #8f861d;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: Sylfaen, serif;
+
+}
+
+.div_footer {
+    width: 100%;
+    height: 250px;
+    background-color: gray;
+
+}
+
+.div_footer p {
+    width: 500px;
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+    padding: 40px;
+}

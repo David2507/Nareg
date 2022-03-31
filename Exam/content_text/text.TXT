@@ -1,0 +1,31 @@
+/*page1 text*/
+Duis aute irure dolor in reprehenderit in voluptate velit 
+esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+occaecat cupidatat non proident
+////////////////////////////////////
+
+/*page2 text*/
+Sample text. Click to select the text box. Click again or 
+double click to start editing the text. Excepteur sint occaecat 
+cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+anim id est laborum.
+
+Sample text. Lorem ipsum dolor sit amet, consectetur
+ adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+
+Luctus accumsan tortor posuere ac ut consequat. Bibendum ut tristique 
+et egestas quis ipsum suspendisse ultrices. Gravida in fermentum et 
+sollicitudin ac orci. Purus gravida quis blandit turpis. Interdum consectetur 
+libero id faucibus nisl tincidunt eget nullam non.​
+//////////////////////////////////
+
+
+/*page3 text*/
+​Helping each child find and follow their best learning path.
+///////////////////////////////////
+
+/*footer text*/
+Пример текста. Кликните, чтобы выбрать текстовый блок.
+ Кликните еще раз или сделайте двойной клик, чтобы начать редактирование текста.
+
+
