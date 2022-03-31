@@ -1,8 +1,6 @@
 // console.log("Exercise IF501 :");
 // let x1 = +prompt("en");
 // let y1 = +prompt("en");
-// let x2 = +prompt("en");
-// let y2 = +prompt("en");
 // let y = +prompt("Enter the number of steps of the boat");
 // if (x1 + y === x2 && y1 === y2 || x1 === x2 && y1 + y === y2) {
 //     console.log("YES");
@@ -122,6 +120,28 @@
 // } else if (x % 2 === 0 && y % 2 === 0) {
 //     console.log("BLACK");
 // }
+
+console.log("Exercise MATR108  :");
+let x = +prompt("Enter number");
+let y = "";
+for (let i = 0; i < x; i++) {
+    y+= "* ";
+    console.log(y)
+}
+
+
+
+// console.log("Exercise IF318  :");
+// let x = +prompt("Enter a four-digit number (1234)");
+// let a,b,c,d;
+// a = x % 10;
+// b = parseInt(x / 10) % 10;
+// c = parseInt(x / 100) % 10;
+// d = parseInt(x / 1000);
+// if ((a + b + c + d) % 2 === 1) {
+//     console.log(Math.max(a, b, c, d));
+// } else console.log(Math.min(a, b, c, d));
+
 
 
 
