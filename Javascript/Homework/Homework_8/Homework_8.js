@@ -1,6 +1,8 @@
 // console.log("Exercise IF501 :");
 // let x1 = +prompt("en");
 // let y1 = +prompt("en");
+// let x2 = +prompt("en");
+// let y2 = +prompt("en");
 // let y = +prompt("Enter the number of steps of the boat");
 // if (x1 + y === x2 && y1 === y2 || x1 === x2 && y1 + y === y2) {
 //     console.log("YES");
@@ -32,7 +34,7 @@
 // console.log("Exercise FOR138 :");
 // let sum = +prompt("Enter");
 // for (let i = 10; i <= 99; i++) {
-//     if (i % 10 + parseInt(i / 10 % 10) === sum) {
+//     if (i % 10 + parseInt(i / 10) === sum) {
 //         console.log(i);
 //     }
 // }
@@ -63,15 +65,19 @@
 // }
 // console.log(countt);
 
+
+
 // console.log("Exercise ALG0006 :");
 // let number = parseInt(prompt("Enter integer"));
 // let sum = 0;
-//
-// for (let i = 1; i <= number; i++) {
+// let start = Math.pow(10,number-1);
+// let end = Math.pow(10,number);
+// for (let i = start; i < end; i++) {
 //     sum += i;
 // }
-//
 // console.log(sum);
+//
+
 
 // console.log("Exercise ALG0012 :");
 // let value = +prompt("Enter number");
@@ -86,9 +92,9 @@
 //     }
 //     if (sum <= 9) {
 //         console.log(sum);
-//     } else {
+//     } else
 //         value = sum;
-//     }
+//
 // }
 
 
@@ -121,14 +127,15 @@
 //     console.log("BLACK");
 // }
 
-console.log("Exercise MATR108  :");
-let x = +prompt("Enter number");
-let y = "";
-for (let i = 0; i < x; i++) {
-    y+= "* ";
-    console.log(y)
-}
-
+// console.log("Exercise MATR108  :");
+// let x = +prompt("Enter number");
+// let y = "*";
+// for (let i = 0; i < x; i++) {
+//
+//     console.log(y);
+//     y+= " * *";
+// }
+//
 
 
 // console.log("Exercise IF318  :");
