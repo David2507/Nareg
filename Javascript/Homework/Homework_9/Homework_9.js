@@ -44,7 +44,7 @@
 // }
 // console.log(z);
 
-// console.log("Exercise EASY0360 :");
+// console.log("Exercise If319 :");
 // let num = +prompt("Enter number");
 // let a = num % 10;
 // let b = parseInt(num / 10) % 10;

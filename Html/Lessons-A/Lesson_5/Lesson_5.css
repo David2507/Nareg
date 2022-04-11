@@ -1,0 +1,20 @@
+.textii {
+    background: linear-gradient(to right, red, blue, gray, black, greenyellow, green, orange, deeppink,navajowhite,lime,firebrick);
+}
+
+.textii > h2 {
+
+    font-size: 3rem;
+    margin: 0;
+    background: white;
+    mix-blend-mode: screen;
+}
+
+
+
+.textikk > h2 {
+    font-size: 3rem;
+    background: linear-gradient(to right, red, white);
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
