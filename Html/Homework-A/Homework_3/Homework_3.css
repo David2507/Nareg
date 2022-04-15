@@ -204,7 +204,7 @@
     border-radius: 8px;
 }
 
-@media (max-width: 965px) {
+@media screen and (max-width: 600px) {
     .navi {
         height: 200px;
         display: block;
