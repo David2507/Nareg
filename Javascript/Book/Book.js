@@ -163,3 +163,24 @@
 // for(a[i++] in o){
 //     console.log(a);
 // }
+
+
+// let empty = {}; // An object with noproperties
+// let point = {x: 0, y: 0}; // Two numericproperties
+// let p2 = {x: point.x, y: point.y + 1}; // More complex values
+// let book = {
+//     for: "all audiences", // for is reserved, but no quotes.
+//     author: { // The value of this property is
+//         firstname: "David", // itself an object.
+//         surname: "Flanagan"
+//     }
+// }
+// console.log(book);
+
+
+// let addr = "";
+// for(let i = 0; i < 4; i++) {
+//     addr += customer[`address${i}`] + "\n";
+// }
+// console.log(addr);
+

@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Lesson_7.css">
+</head>
+<body>
+<div class="container p-3 my-3 border bg-primary text-white">
+    <h1>My First Bootstrap Page</h1>
+    <p>This container has a border and some extra padding and margins.</p>
+</div>
+<div class="container">
+    <h1>Responsive Containers</h1>
+    <p>Resize the browser window to see the effect.</p>
+</div>
+
+<div class="container-sm border">.container-sm</div>
+<div class="container-md mt-3 border">.container-md</div>
+<div class="container-lg mt-3 border">.container-lg</div>
+<div class="container-xl mt-3 border">.container-xl</div>
+<div class="container-fluid">
+    <h1>Three equal width columns</h1>
+    <p>Note: Try to add a new div with class="col" inside the row class - this will create four equal-width columns.</p>
+    <div class="row">
+        <div class="col" style="background-color:lavender;">.col</div>
+        <div class="col" style="background-color:orange;">.col</div>
+        <div class="col" style="background-color:lavender;">.col</div>
+    </div>
+</div>
+<div class="container-fluid">
+    <h1>Two Unequal Responsive Columns</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+    <div class="row">
+        <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+        <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+    </div>
+</div>
+<div class="container">
+    <h1>Display Headings</h1>
+    <p>Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):</p>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+</div>
+<div class="container">
+    <h1>Lighter, Secondary Text</h1>
+    <p>The small element is used to create a lighter, secondary text in any heading:</p>
+    <h1>h1 heading <small>secondary text</small></h1>
+    <h2>h2 heading <small>secondary text</small></h2>
+    <h3>h3 heading <small>secondary text</small></h3>
+    <h4>h4 heading <small>secondary text</small></h4>
+    <h5>h5 heading <small>secondary text</small></h5>
+    <h6>h6 heading <small>secondary text</small></h6>
+</div>
+<div class="container">
+    <h2>Contextual Colors</h2>
+    <p>Use the contextual classes to provide "meaning through colors":</p>
+    <p class="text-muted" style='color: green'>This text is muted.</p>
+    <p class="text-primary">This text is important.</p>
+    <p class="text-success">This text indicates success.</p>
+    <p class="text-info">This text represents some information.</p>
+    <p class="text-warning">This text represents a warning.</p>
+    <p class="text-danger">This text represents danger.</p>
+    <p class="text-secondary">Secondary text.</p>
+    <p class="text-dark">This text is dark grey.</p>
+    <p class="text-body">Default body color (often black).</p>
+    <p class="text-light">This text is light grey (on white background).</p>
+    <p class="text-white">This text is white (on white background).</p>
+</div>
+<div class="container">
+    <h2>Opacity Text Colors</h2>
+    <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+    <p class="text-black-50">Black text with 50% opacity on white background</p>
+    <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+</div>
+<div class="container">
+    <h2>Contextual Link Colors</h2>
+    <p>Hover over the links.</p>
+    <a href="#" class="text-muted">Muted link.</a>
+    <a href="#" class="text-primary">Primary link.</a>
+    <a href="#" class="text-success">Success link.</a>
+    <a href="#" class="text-info">Info link.</a>
+    <a href="#" class="text-warning">Warning link.</a>
+    <a href="#" class="text-danger">Danger link.</a>
+    <a href="#" class="text-secondary">Secondary link.</a>
+    <a href="#" class="text-dark">Dark grey link.</a>
+    <a href="#" class="text-body">Body/black link.</a>
+    <a href="#" class="text-light">Light grey link.</a>
+</div>
+<div class="container">
+    <h2>Basic Table</h2>
+    <table class="table-striped table-bordered table-hover table-dark table-borderless">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="table-responsive-lg">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Sex</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+            <th>Example</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Anna</td>
+            <td>Pitt</td>
+            <td>35</td>
+            <td>New York</td>
+            <td>USA</td>
+            <td>Female</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <h2>Rounded Corners</h2>
+    <p>The .rounded class adds rounded corners to an image:</p>
+    <img src="Psto.png" class="rounded-circle img-thumbnail float-right" alt="Cinque Terre" width="1265" height="804">
+</div>
+<div class="container">
+    <h2>Aligning images</h2>
+    <p>Use the float classes to float the image to the left or to the right:</p>
+    <img src="Psto.png" class="float-left" alt="Paris" width="304" height="236">
+    <img src="Psto.png" class="float-right" alt="Paris" width="304" height="236">
+</div>
+<div class="container">
+    <h2>Image</h2>
+    <p>The .img-fluid class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p>
+    <img class="img-fluid" src="Psto.png" alt="Chania" width="1265" height="804">
+</div>
+<div class="container">
+    <h2>Alerts</h2>
+    <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+    <div class="alert alert-success">
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+    <div class="alert alert-info">
+        <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+    </div>
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+    </div>
+    <div class="alert alert-danger">
+        <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+    </div>
+    <div class="alert alert-primary">
+        <strong>Primary!</strong> Indicates an important action.
+    </div>
+    <div class="alert alert-secondary">
+        <strong>Secondary!</strong> Indicates a slightly less important action.
+    </div>
+    <div class="alert alert-dark">
+        <strong>Dark!</strong> Dark grey alert.
+    </div>
+    <div class="alert alert-light">
+        <strong>Light!</strong> Light grey alert.
+    </div>
+</div>
+<div class="container">
+    <h2>Alerts</h2>
+    <p>The button with class="close" and data-dismiss="alert" is used to close the alert box.</p>
+    <p>The alert-dismissible class adds some extra padding to the close button.</p>
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+    <div class="alert alert-info alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+    </div>
+    <div class="alert alert-warning alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+    </div>
+    <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+    </div>
+    <div class="alert alert-primary alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Primary!</strong> Indicates an important action.
+    </div>
+</div>
+<div class="container">
+    <h2>Animated Alerts</h2>
+    <p>The .fade and .show classes adds a fading effect when closing the alert message.</p>
+    <div class="alert alert-success alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+    <div class="alert alert-info alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+    </div>
+    <div class="alert alert-secondary alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Secondary!</strong> Indicates a slightly less important action.
+    </div>
+    <div class="alert alert-dark alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Dark!</strong> Dark grey alert.
+    </div>
+    <div class="alert alert-light alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Light!</strong> Light grey alert.
+    </div>
+</div>
+<div class="container">
+    <h2>Button Styles</h2>
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-link">Link</button>
+</div>
+<div class="container">
+    <h2>Button Outline</h2>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <button type="button" class="btn btn-outline-light text-dark">Light</button>
+</div>
+<div class="container">
+    <h2>Button Sizes</h2>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary btn-md">Default</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+</div>
+<div class="container-fluid">
+    <h2>Block Level Buttons</h2>
+    <button type="button" class="btn btn-primary btn-block">Button 1</button>
+    <button type="button" class="btn btn-success btn-block">Button 2</button>
+    <br>
+
+    <h2>Large Block Level Buttons</h2>
+    <button type="button" class="btn btn-primary btn-lg btn-block">Button 1</button>
+    <button type="button" class="btn btn-success btn-lg btn-block">Button 2</button>
+    <br>
+
+    <h2>Small Block Level Buttons</h2>
+    <button type="button" class="btn btn-primary btn-sm btn-block">Button 1</button>
+    <button type="button" class="btn btn-success btn-sm btn-block">Button 2</button>
+</div>
+<div class="container">
+    <h2>Spinner Buttons</h2>
+    <p>Add spinners to buttons:</p>
+
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+    </button>
+
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+    </button>
+
+    <button class="btn btn-primary" >
+        <span class="spinner-border spinner-border-sm"></span>
+        Loading..
+    </button>
+
+    <button class="btn btn-primary" disabled>
+        <span class="spinner-grow spinner-grow-sm"></span>
+        Loading..
+    </button>
+</div>
+<div class="container">
+    <h2>Button Group</h2>
+    <p>The .btn-group class creates a button group:</p>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-info">Samsung</button>
+        <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+</div>
+<div class="container">
+    <h2>Button Groups Sizes</h2>
+    <p>Add class .btn-group-* to size all buttons in a button group.</p>
+    <h3>Large Buttons:</h3>
+    <div class="btn-group btn-group-lg">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <h3>Default Buttons:</h3>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <h3>Small Buttons:</h3>
+    <div class="btn-group btn-group-sm">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+</div>
+<div class="container">
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+</div>
+<div class="container">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+        <button type="button" class="btn btn-primary">Samsung</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tablet</a>
+                <a class="dropdown-item" href="#">Smartphone</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
