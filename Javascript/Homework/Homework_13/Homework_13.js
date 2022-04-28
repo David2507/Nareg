@@ -2,7 +2,7 @@ let books = [];
 let authorNames = ["Valod Karapetyan", "Jivan Karapetyan",
     "Ishxan Grigoryan", "Valod Karapetyan", "Valod Karapetyan",
     "Valod Karapetyan", "Ishxan Grigoryan", "Ishxan Grigoryan",
-    "Jivan Karapetyan", "Jivan Karapetyan"]
+    "Jivan Karapetyan", "Jivan Karapetyan"];
 
 for (let index = 1; index < 11; index++) {
     let namesArray = authorNames[index - 1].split(" ");
