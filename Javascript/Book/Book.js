@@ -184,3 +184,87 @@
 // }
 // console.log(addr);
 
+
+// let o1 = Object.create({x: 5, y: 2});
+//
+// console.log(o1.x+6);
+// let o2 = Object.create(null);
+// console.log(o2);
+// let o3 = Object.create(Object.prototype);
+// console.log(o3);
+// function addstock(portfolio, stockname, shares) {
+//     portfolio[stockname] = shares;
+// }
+//
+// function computeValue(portfolio) {
+//     let total = 0.0;
+//     for(let stock in portfolio) { // For each stock in the portfolio:
+//             let shares = portfolio[stock]; // get the number of shares
+//         let price = getQuote(stock); // look up share price
+//         total += shares * price; // add stock value to total value
+//     }
+//     return total; // Return total value.
+// }
+//
+// console.log(computeValue(6.6));
+// let o = { x: 1 };
+// console.log(o.propertyIsEnumerable());
+//
+// let c = {x: 1, y: 2, z: 3};
+// for(let p in c) {
+//     console.log(p);
+// }
+// let target = {x: 1}, source = {y: 2, z: 3};
+// for(let key of Object.keys(source)) {
+//     target[key] = source[key];
+// }
+// console.log(target);
+// console.log(Object.keys(source));
+// let b = [[1, {x: 1, y: 2}], [2, {x: 3, y: 4}]];
+// console.log(b);
+// let undefs = [ 5,,4];
+// console.log(Array.of(10,4));
+// let copy = Array.from(undefs);
+// console.log(copy);
+// let a = ["world"]; // Start with a one-element array
+// let value = a[0]; // Read element 0
+// a[1] = 3.14; // Write element 1
+// let i = 2;
+// a[i] = 3; // Write element 2
+// a[i + 1] = "hello"; // Write element 3
+// a[a[i]] = a[0];
+// console.log(a);
+//
+// let f = [true, false];
+// console.log(f[1]);
+// let d =[];
+// d[1000] = 0;
+// console.log(d.length);
+// let letters = [..."Hello world"];
+// console.log(letters.length);
+
+
+let a = [8, 5, 8, 7, 9, 66, 4];
+let sum = 0;
+console.log(a.map(value => value + 5));
+a.forEach(value => {
+    sum += value
+})
+console.log(sum);
+
+
+function sumArray(arr) {
+    let sum = 0;
+    arr.forEach(index => {
+        sum += index;
+    })
+    return sum;
+
+}
+
+console.log(sumArray([5, 6, 8, 4, 7]));
+
+let c = [1,2,3,4,5,6,7];
+// console.log(c.filter(i => i%2===0));
+
+console.log(c.copyWithin(1, 3,6));
