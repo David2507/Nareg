@@ -1,17 +1,32 @@
-let arr1 = [25,254,8,54,65,1];
-let arr2 = [5,1,254,80,65,1];
-function f(a,b) {
-    return a-b;
+function maxNumber(x, y, z) {
+    let max;
+    if (x > y) {
+        max = x;
+    } else {
+        max = y;
+    }
+    if (z > max) {
+        max = z;
+
+    }
+    return max
 }
-console.log(arr1.sort(f));
+
+console.log(maxNumber(5, 8, 1));
 
 
+function sortString(...arrString) {
+    for (let i = 0; i < arrString.length-1; i++) {
+        let arr;
+        for (let j = i+1; j < arrString.length; j++) {
+            if (arrString[i] > arrString[j]) {
+                arr = arrString[j];
+                arrString[j] = arrString[i];
+                arrString[i] = arr;
+            }
+        }
+    }
+    return arrString;
+}
 
-
-// for (let i = 0; i < arr1.length; i++) {
-//     for (let j = 0; j < arr2.length; j++) {
-//         if (arr1[i] ===arr2[j]){
-//             console.log(arr1[i]);
-//         }
-//     }
-// }
+console.log(sortString('Y', 'Veronica', 'Mounika','Veronica', 'Shaunik', 'Karen'));

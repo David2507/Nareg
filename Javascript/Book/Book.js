@@ -244,27 +244,55 @@
 // console.log(letters.length);
 
 
-let a = [8, 5, 8, 7, 9, 66, 4];
-let sum = 0;
-console.log(a.map(value => value + 5));
-a.forEach(value => {
-    sum += value
-})
-console.log(sum);
+// let a = [8, 5, 8, 7, 9, 66, 4];
+// let sum = 0;
+// console.log(a.map(value => value + 5));
+// a.forEach(value => {
+//     sum += value
+// })
+// console.log(sum);
+//
+//
+// function sumArray(arr) {
+//     let sum = 0;
+//     arr.forEach(index => {
+//         sum += index;
+//     })
+//     return sum;
+//
+// }
+//
+// console.log(sumArray([5, 6, 8, 4, 7]));
+//
+// let c = [1,2,3,4,5,6,7];
+// // console.log(c.filter(i => i%2===0));
+//
+// console.log(c.copyWithin(1, 3,6));
 
 
-function sumArray(arr) {
-    let sum = 0;
-    arr.forEach(index => {
-        sum += index;
-    })
-    return sum;
+// let x = 10;
+// let y = 100;
+// for (let i = x; i < y; ++i) {
+//     if (i % 5 === 0 && i % 7 === 0) {
+//         console.log(i);
+//     }
+// }
+// console.log("There is no multiple number in this range");
 
-}
+// let x = 10;
+// let y = 11;
+// let isMultiple = false;
+// for (let i = x; i <= y; ++i) {
+//     if (i % 5 === 0 && i % 7 === 0) {
+//         console.log(i)
+//         isMultiple = true;
+//     }
+// }
+//
+// if(!isMultiple) {
+//     console.log("no multiples")
+// }
 
-console.log(sumArray([5, 6, 8, 4, 7]));
 
-let c = [1,2,3,4,5,6,7];
-// console.log(c.filter(i => i%2===0));
 
-console.log(c.copyWithin(1, 3,6));
+
