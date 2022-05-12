@@ -70,13 +70,13 @@ function balance() {
 }
 
 function find() {
-    let viewOrPayCommand = prompt("Enter command: 1: VIEW, 2: PAY");
+    let viewOrPayCommand = prompt("Enter command: 1: VIEW 2: PAY 3: MAIN MENU");
     if (viewOrPayCommand === "VIEW") {
         let retireeInfo = view();
         if (retireeInfo === -1) {
             menuCommand();
         }
-        let payOrMenuCommand = prompt("Enter command: 1: PAY, 2: MAIN MENU");
+        let payOrMenuCommand = prompt("Enter command: 1: PAY 2: MAIN MENU");
         if (payOrMenuCommand === "PAY") {
             pay();
             console.log(admin);
@@ -89,14 +89,16 @@ function find() {
     } else if (viewOrPayCommand === "PAY") {
         pay();
         console.log(admin);
-    } else {
+    } else if (viewOrPayCommand === "MAIN MENU") {
+        menuCommand()
+    }else {
         alert("Try selecting command again.");
         menuCommand();
     }
 }
 
 function menuCommand() {
-    let command = prompt("Enter command: 1: FIND, 2: ADD, 3: DELETE, 4: BALANCE,5:LIST 6: EXIT");
+    let command = prompt("Enter command: 1: FIND 2: ADD 3: DELETE 4: BALANCE 5: LIST 6: EXIT");
     switch (command) {
         case "FIND":
             find();
@@ -127,8 +129,14 @@ function menuCommand() {
 }
 
 function view() {
-    let name = prompt("Enter name of retiree: ");
-    let surname = prompt("Enter surname of retiree: ");
+    let name = prompt("Enter name of retiree or Enter MAIN MENU: ");
+    if (name === "MAIN MENU"){
+        menuCommand();
+    }
+    let surname = prompt("Enter surname of retiree or Enter MAIN MENU: ");
+    if (surname === "MAIN MENU"){
+        menuCommand();
+    }
     let newList = [];
     let infoRetirees = admin.infoRetirees;
     for (const retiree of infoRetirees) {
@@ -138,6 +146,7 @@ function view() {
     }
     if (newList.length === 0) {
         alert("Name or surname is incorrect, please enter the correct information.");
+        view();
     } else {
         for (const retiree of newList) {
             alert("name: " + retiree.name + "\n"
@@ -186,13 +195,28 @@ function createRetiree(newName, newSurname, newAge, newCard) {
     }
 }
 
+function rightCardNumber() {
+    let newCard = +prompt("Enter cardNumber of new retiree -->(min 15 number): ");
+    let cardLenght = "";
+    cardLenght += newCard;
+    if (cardLenght.length < 15) {
+        alert("Please enter the correct card number.");
+        rightCardNumber();
+    }
+    return newCard;
+}
+
 function add() {
     let newName = prompt("Enter name of new retiree: ");
     let newSurname = prompt("Enter surname of new retiree: ");
-    let newAge = +prompt("Enter age of new retiree: ");
-    let newCard = +prompt("Enter cardNumber of new retiree: ");
+    let newAge = +prompt("Enter age of new retiree -->(min age 63): ");
+    if (newAge < 63) {
+        alert("You are not retired yet, please wait until you are 63 years old");
+        add();
+    }
+    rightCardNumber();
     let balance = 0;
-    let newRetiree = createRetiree(newName, newSurname, newAge, newCard, balance);
+    let newRetiree = createRetiree(newName, newSurname, newAge, rightCardNumber(), balance);
     admin.infoRetirees.push(newRetiree);
     alert("New retiree added :)" + "\n"
         + "name: " + newRetiree.name + "\n"

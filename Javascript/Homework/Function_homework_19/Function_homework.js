@@ -1,35 +1,3 @@
-// function maxNumber(x, y, z) {
-//     let max;
-//     if (x > y) {
-//         max = x;
-//     } else {
-//         max = y;
-//     }
-//     if (z > max) {
-//         max = z;
-//
-//     }
-//     return max
-// }
-//
-// console.log(maxNumber(5, 8, 1));
-//
-//
-// function sortString(...arrString) {
-//     for (let i = 0; i < arrString.length-1; i++) {
-//         let arr;
-//         for (let j = i+1; j < arrString.length; j++) {
-//             if (arrString[i] > arrString[j]) {
-//                 arr = arrString[j];
-//                 arrString[j] = arrString[i];
-//                 arrString[i] = arr;
-//             }
-//         }
-//     }
-//     return arrString;
-// }
-//
-// console.log(sortString('Y', 'Veronica', 'Mounika','Veronica', 'Shaunik', 'Karen'));
 //1
 function codeAsci(simbole) {
     return simbole.charCodeAt(simbole);
@@ -98,6 +66,7 @@ function actionNumber(x, y, z) {
 console.log(actionNumber(5, 6, sum));
 
 //6
+//option 1
 function reverseNumber(arrayNumber) {
     let arrayString = arrayNumber.toString();
     let arr = [];
@@ -108,9 +77,9 @@ function reverseNumber(arrayNumber) {
 
 }
 
-console.log(reverseNumber(12345));
+console.log(reverseNumber(123456));
 
-
+//option 2
 function count_digits(n) {
     let arr = []
     while (n > 0) {
@@ -121,6 +90,19 @@ function count_digits(n) {
 }
 
 console.log(count_digits(123456));
+
+//option 3
+function rev_digits(number) {
+    let newNumber = 0;
+    while (number !== 0) {
+        let last = number % 10;
+        newNumber = newNumber * 10 + last;
+        number = (number - last) / 10;
+    }
+    return newNumber;
+}
+
+console.log(rev_digits(123456));
 
 
 //7
@@ -147,7 +129,7 @@ function combString(string) {
     return arrCombString;
 }
 
-console.log(combString("bar"));
+console.log(combString("dog"));
 
 //9
 function alphabetSortMethod(str) {
@@ -155,22 +137,6 @@ function alphabetSortMethod(str) {
 }
 
 console.log(alphabetSortMethod("barev"));
-
-
-function alphabet(string) {
-    let newString = "";
-    for (let i = 0; i < string.length; i++) {
-        if (string.charCodeAt(string[i]) > string.charCodeAt(string[i + 1])) {
-            newString += string[i + 1];
-        }
-
-    }
-    return newString;
-
-}
-
-console.log(alphabet("barev"));
-
 
 //10
 function startToUpperCase(string) {
@@ -202,16 +168,46 @@ function arrClone(arr) {
     return arrClone;
 }
 
-console.log(arrClone([5,4,8,9,7,33,6,5]));
+console.log(arrClone([5, 4, 8, 9, 7, 33, 6, 5]));
 
 //12
-function firstElementArray(array,n) {
-    if (n == null)
+function firstElementArray(array, n) {
+    if (n == null) {
         return array[0];
-    if (n < 0)
+    }
+
+    if (n < 0) {
         return [];
+    }
+
     return array.slice(0, n);
 
 }
 
-console.log(firstElementArray([[],[55,4,8,9,62,3],[6,48,6,9,33]],2));
+console.log(firstElementArray([[], [55, 4, 8, 9, 62, 3], [6, 48, 6, 9, 33]], 2));
+
+//13
+function lastElementArray(array, n) {
+    if (n === null) {
+        return array[array.length - 1];
+    }
+    return array.slice(array.length - n);
+
+}
+
+console.log(lastElementArray([4, 8, 6, 9, 10, 4], 2));
+console.log();
+
+//14
+function elementArray(array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log("row " + i);
+        for (let j = 0; j < array[i].length; j++) {
+            console.log(array[i][j]);
+        }
+    }
+
+}
+
+elementArray([[55, 4, 8, 9], [5, 4, 8, 9, 62, 3], [16, 48, 6, 9, 33], [7, 4, 64, 9, 3]]);
+
