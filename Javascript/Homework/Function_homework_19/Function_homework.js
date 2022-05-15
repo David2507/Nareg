@@ -1,11 +1,18 @@
-//1
-function codeAsci(simbole) {
+console.log("Exercise 1:");
+console.log("AsciiCode");
+console.log();
+
+function codeAscii(simbole) {
     return simbole.charCodeAt(simbole);
 }
 
-console.log(codeAsci("A"));
+console.log(codeAscii("A"));
 
-//2
+console.log();
+console.log("Exercise 2:");
+console.log("Replace the ‘a’ character in the given line with ‘b’.");
+console.log();
+
 function changeSimbol(string) {
     let count = 0;
     let newStr = "";
@@ -24,7 +31,11 @@ function changeSimbol(string) {
 
 changeSimbol("asdasfweafewf");
 
-//3
+console.log();
+console.log("Exercise 3:");
+console.log("Remove all digits from the given line.");
+console.log();
+
 function deleteNumber(str) {
     let newStr = "";
     for (let i = 0; i < str.length; i++) {
@@ -38,7 +49,11 @@ function deleteNumber(str) {
 
 console.log(deleteNumber("sadasdas121sad45asd8"));
 
-//4
+console.log();
+console.log("Exercise 4:");
+console.log("A line consisting of two words is given. Move those words in places. Export the resulting line.");
+console.log();
+
 function changeWord(arrString) {
     let str = arrString.split(" ");
     let newArray = [];
@@ -54,7 +69,11 @@ function changeWord(arrString) {
 
 console.log(changeWord("hello word"));
 
-//5
+console.log();
+console.log("Exercise 5:");
+console.log("Write a JavaScript program to pass a 'JavaScript function' as parameter");
+console.log();
+
 function sum(x, y) {
     return x + y;
 }
@@ -65,7 +84,11 @@ function actionNumber(x, y, z) {
 
 console.log(actionNumber(5, 6, sum));
 
-//6
+console.log();
+console.log("Exercise 6:");
+console.log("Write a JavaScript function that reverse a number.");
+console.log();
+
 //option 1
 function reverseNumber(arrayNumber) {
     let arrayString = arrayNumber.toString();
@@ -105,10 +128,15 @@ function rev_digits(number) {
 console.log(rev_digits(123456));
 
 
-//7
+console.log();
+console.log("Exercise 7:");
+console.log("Write a JavaScript function that checks whether a passed string is palindrome or not?  " +
+    "A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam or nurses run.");
+console.log();
+
 function polyString(string) {
     let strLen = string.length;
-    for (let i = 0; i < string.length / 2; i++) {
+    for (let i = 0; i < strLen / 2; i++) {
         if (string[i] !== string[strLen - 1 - i]) {
             return "is not palindrome";
         }
@@ -118,7 +146,11 @@ function polyString(string) {
 
 console.log(polyString("ara"));
 
-//8
+console.log();
+console.log("Exercise 8:");
+console.log("Write a JavaScript function that generates all combinations of a string");
+console.log();
+
 function combString(string) {
     let arrCombString = [];
     for (let i = 0; i < string.length; i++) {
@@ -131,14 +163,23 @@ function combString(string) {
 
 console.log(combString("dog"));
 
-//9
+console.log();
+console.log("Exercise 9:");
+console.log("Write a JavaScript function that returns a passed string with letters in alphabetical order. ");
+console.log();
+
 function alphabetSortMethod(str) {
     return str.split("").sort().join("");
 }
 
 console.log(alphabetSortMethod("barev"));
 
-//10
+console.log();
+console.log("Exercise 10:");
+console.log(" Write a JavaScript function that accepts a string as a parameter and converts " +
+    "the first letter of each word of the string in upper case. ");
+console.log();
+
 function startToUpperCase(string) {
     let str = string.split(" ");
     let newString = "";
@@ -151,7 +192,11 @@ function startToUpperCase(string) {
 console.log(startToUpperCase("bari aravot bolorin"));
 
 
-//11
+console.log();
+console.log("Exercise 11:");
+console.log("Write a JavaScript function to clone an array");
+console.log();
+
 //option 1
 function cloneArray(array) {
     return array.map(elem => elem);
@@ -170,7 +215,12 @@ function arrClone(arr) {
 
 console.log(arrClone([5, 4, 8, 9, 7, 33, 6, 5]));
 
-//12
+console.log();
+console.log("Exercise 12:");
+console.log("Write a JavaScript function to get the first element of an array. Passing a " +
+    "parameter 'n' will return the first 'n' elements of the array");
+console.log();
+
 function firstElementArray(array, n) {
     if (n == null) {
         return array[0];
@@ -186,7 +236,12 @@ function firstElementArray(array, n) {
 
 console.log(firstElementArray([[], [55, 4, 8, 9, 62, 3], [6, 48, 6, 9, 33]], 2));
 
-//13
+console.log();
+console.log("Exercise 13:");
+console.log("Write a JavaScript function to get the last element of an array. " +
+    "Passing a parameter 'n' will return the last 'n' elements of the array.");
+console.log();
+
 function lastElementArray(array, n) {
     if (n === null) {
         return array[array.length - 1];
@@ -198,7 +253,11 @@ function lastElementArray(array, n) {
 console.log(lastElementArray([4, 8, 6, 9, 10, 4], 2));
 console.log();
 
-//14
+console.log();
+console.log("Exercise 14:");
+console.log("Write a JavaScript program which prints the elements of the following array.");
+console.log();
+
 function elementArray(array) {
     for (let i = 0; i < array.length; i++) {
         console.log("row " + i);
@@ -210,4 +269,5 @@ function elementArray(array) {
 }
 
 elementArray([[55, 4, 8, 9], [5, 4, 8, 9, 62, 3], [16, 48, 6, 9, 33], [7, 4, 64, 9, 3]]);
+
 

@@ -1,29 +1,3 @@
-// class Man {
-//     constructor(name, lastName, age, color) {
-//         this.name = name;
-//         this.lastName = lastName;
-//         this.age = age;
-//         this.color = color;
-//     }
-//
-//     Walk() {
-//         console.log("I'm walking");
-//     }
-//
-//     talk() {
-//         console.log(this.name + " is talking");
-//     }
-//
-// }
-//
-// let man1 = new Man("Karen", "Petrosya", 25, "Gray");
-// let man2 = new Man("Anna", "Karapetyan", 15);
-//
-// console.log(man1);
-// console.log(typeof man1);
-//
-// man1.talk();
-
 class NumberHelper {
     constructor(inputNumber) {
         this.inputNumber = inputNumber;

@@ -18,5 +18,7 @@
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="bootstrap-icons" level="application" />
     <orderEntry type="library" name="api" level="application" />
+    <orderEntry type="library" name="backbone" level="application" />
+    <orderEntry type="library" name="underscore" level="application" />
   </component>
 </module>
