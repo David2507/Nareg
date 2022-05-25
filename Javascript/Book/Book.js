@@ -292,7 +292,8 @@
 // if(!isMultiple) {
 //     console.log("no multiples")
 // }
-
-
+let days = new Date();
+let myToday = days.getDate();
+console.log(yDays);
 
 
