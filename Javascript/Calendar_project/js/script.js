@@ -1,49 +1,83 @@
 let root = document.querySelector("#root");
 let days = new Date();
-const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Dectember"];
-const weekNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+let selectedDay = null;
+
+const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "Dectember",
+];
+const weekNames = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+];
 let wDays = days.getDay(); // this weeks day 0-6
 let mList = days.getMonth(); // this month 0-11
 let mDays = days.getDate(); // this Day 1-31
 let yDays = days.getFullYear(); // this year 2022
 
-
 function createCalendar(elem, year, month) {
     let arr = [];
     let mon = month - 1;
     let day = new Date(year, mon);
-    let table = '<table><tr class="days"><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr>';
-    for (let i = 0; i < getDay(day); i++) {  //0-6
-        table += '<td></td>';
+    let table =
+        '<table><tr class="days"><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr><tr>';
+    for (let i = 0; i < getDay(day); i++) {
+        //0-6
+        table += "<td></td>";
         arr.push(1);
     }
     while (day.getMonth() === mon) {
         arr.push(1);
         if (arr.length > 5) {
-            table += `<td onclick="note(this)" id="id${day.getDate()}${mon}${year}"  class="weekend"><textarea class = "comment" contenteditable = "true"></textarea>` + day.getDate() + '</td>';
+            table +=
+                `<td onclick="note(this)" id="id${day.getDate()}${mon}${year}"  class="weekend"><textarea class = "comment" contenteditable = "true"></textarea>` +
+                day.getDate() +
+                "</td>";
         } else {
-            table += `<td onclick="note(this)" id="id${day.getDate()}${mon}${year}"><textarea class = "comment" contenteditable = "true"></textarea>` + day.getDate() + '</td>';
+            table +=
+                `<td onclick="note(this)" id="id${day.getDate()}${mon}${year}"><textarea class = "comment" contenteditable = "true"></textarea>` +
+                day.getDate() +
+                "</td>";
         }
         if (getDay(day) % 7 === 6) {
-            table += '</tr><tr>';
+            table += "</tr><tr>";
             arr = [];
         }
         day.setDate(day.getDate() + 1);
-
     }
     if (getDay(day) !== 0) {
         for (let i = getDay(day); i < 7; i++) {
-            table += '<td></td>';
+            table += "<td></td>";
         }
     }
-    table += '</tr></table>';
+    table += "</tr></table>";
     elem.innerHTML = table;
 
-    let todayElement = document.getElementById("id" + new Date().getDate() + new Date().getMonth() + new Date().getFullYear());
+    let todayElement = document.getElementById(
+        "id" +
+        new Date().getDate() +
+        new Date().getMonth() +
+        new Date().getFullYear()
+    );
     if (todayElement) {
         todayElement.style.backgroundColor = "blue";
     }
-
 }
 
 function getDay(date) {
@@ -74,7 +108,6 @@ function headerRender() {
 
 headerRender();
 
-
 function addCalendarYearAndMonth() {
     let monthSelect = document.querySelector("#monthSelect");
     let next = document.querySelector("#next");
@@ -100,17 +133,16 @@ function addCalendarYearAndMonth() {
     });
     monthSelect.addEventListener("change", () => {
         let month = parseInt(monthSelect.value, 10);
-        document.querySelector(".mh").innerText = monthNames[month]
+        document.querySelector(".mh").innerText = monthNames[month];
         createCalendar(root, yDays, month + 1);
     });
 }
 
 addCalendarYearAndMonth();
 
-
 function addZeroTime(i) {
     if (i < 10) {
-        i = "0" + i
+        i = "0" + i;
     }
     return i;
 }
@@ -140,17 +172,12 @@ watch();
 let text = document.createElement("textarea");
 
 function note(td) {
+    if (selectedDay && selectedDay !== td) {
+        selectedDay.classList.remove("note");
+    }
+
+    selectedDay = td;
     td.classList.toggle("note");
-    td.querySelector(".comment").focus();
+
+    selectedDay.querySelector(".comment").focus();
 }
-
-function f() {
-    let td = document.getElementsByTagName("td");
-
-
-}
-
-
-
-
-
