@@ -292,8 +292,46 @@
 // if(!isMultiple) {
 //     console.log("no multiples")
 // }
-let days = new Date();
-let myToday = days.getDate();
-console.log(yDays);
+// let days = new Date();
+// let myToday = days.getDate();
+// console.log(yDays);
+
+// let a = +prompt("number");
+// let b = +prompt("number");
+// let c = +prompt("number");
+// if (Number.isInteger(Math.sqrt(a * b))) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(Math.sqrt(a * b));
+// }
+//
+// if (Number.isInteger(Math.sqrt(a * c))) {
+//     console.log(a);
+//     console.log(c);
+//     console.log(Math.sqrt(a * c));
+// }
+//
+// if (Number.isInteger(Math.sqrt(c * b))) {
+//     console.log(c);
+//     console.log(b);
+//     console.log(Math.sqrt(c * b));
+// }
+//
+// if (Number.isInteger(Math.sqrt(a * b)) && Number.isInteger(Math.sqrt(a * c)) && Number.isInteger(Math.sqrt(c * b))) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+//     console.log(Math.sqrt(a * b));
+//     console.log(Math.sqrt(a * c));
+//     console.log(Math.sqrt(c * b));
+// }
 
 
+for (let i = 999; i >= 100; i--) {
+    let a = Math.sqrt(i*19);
+    let b = Math.floor(Math.sqrt(i*19));
+    if (a-b === 0) {
+        console.log(i);
+        break;
+    }
+}

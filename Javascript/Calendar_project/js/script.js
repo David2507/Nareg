@@ -1,5 +1,3 @@
-//Օր,ամիս,տարի ----> ՎԵՐՋՆԱԿԱՆ
-
 let root = document.querySelector("#root");
 let days = new Date();
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "Dectember"];
@@ -22,15 +20,16 @@ function createCalendar(elem, year, month) {
     while (day.getMonth() === mon) {
         arr.push(1);
         if (arr.length > 5) {
-            table += '<td onclick="note(this)"  class="weekend"><textarea class = "comment" contenteditable = "true"></textarea>' + day.getDate() + '</td>';
+            table += `<td onclick="note(this)" id="id${day.getDate()}${mon}${year}"  class="weekend"><textarea class = "comment" contenteditable = "true"></textarea>` + day.getDate() + '</td>';
         } else {
-            table += '<td onclick="note(this)"><textarea class = "comment" contenteditable = "true"></textarea>' + day.getDate() + '</td>';
+            table += `<td onclick="note(this)" id="id${day.getDate()}${mon}${year}"><textarea class = "comment" contenteditable = "true"></textarea>` + day.getDate() + '</td>';
         }
         if (getDay(day) % 7 === 6) {
             table += '</tr><tr>';
             arr = [];
         }
         day.setDate(day.getDate() + 1);
+
     }
     if (getDay(day) !== 0) {
         for (let i = getDay(day); i < 7; i++) {
@@ -39,6 +38,12 @@ function createCalendar(elem, year, month) {
     }
     table += '</tr></table>';
     elem.innerHTML = table;
+
+    let todayElement = document.getElementById("id" + new Date().getDate() + new Date().getMonth() + new Date().getFullYear());
+    if (todayElement) {
+        todayElement.style.backgroundColor = "blue";
+    }
+
 }
 
 function getDay(date) {
@@ -66,14 +71,16 @@ function headerRender() {
         select.appendChild(option);
     }
 }
+
 headerRender();
+
 
 function addCalendarYearAndMonth() {
     let monthSelect = document.querySelector("#monthSelect");
     let next = document.querySelector("#next");
     let month = parseInt(monthSelect.value, 10);
     next.addEventListener("click", () => {
-        yDays += 1
+        yDays += 1;
         createCalendar(root, yDays, month + 1);
         document.querySelector(".year").innerHTML = yDays;
     });
@@ -97,6 +104,7 @@ function addCalendarYearAndMonth() {
         createCalendar(root, yDays, month + 1);
     });
 }
+
 addCalendarYearAndMonth();
 
 
@@ -126,6 +134,7 @@ function watch() {
         clock.innerHTML = time;
     }, 1000);
 }
+
 watch();
 
 let text = document.createElement("textarea");
@@ -134,6 +143,13 @@ function note(td) {
     td.classList.toggle("note");
     td.querySelector(".comment").focus();
 }
+
+function f() {
+    let td = document.getElementsByTagName("td");
+
+
+}
+
 
 
 

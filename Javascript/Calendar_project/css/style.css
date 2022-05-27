@@ -64,6 +64,10 @@ select {
     margin: 0 0 0 20px;
 }
 
+.dy {
+    margin: 0 0 0 20px;
+}
+
 select:hover {
     opacity: 1;
 }
@@ -201,7 +205,8 @@ td:hover {
     cursor: pointer;
     background-color: #555;
 }
-.mytoday{
+
+.mytoday {
     color: red;
 }
 
