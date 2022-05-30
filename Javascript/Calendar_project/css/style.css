@@ -64,10 +64,6 @@ select {
     margin: 0 0 0 20px;
 }
 
-.dy {
-    margin: 0 0 0 20px;
-}
-
 select:hover {
     opacity: 1;
 }
@@ -111,7 +107,6 @@ select:hover {
 }
 
 .btns > div {
-    border-radius: 3px;
     transition: all .1s;
     opacity: .89;
     background-color: #333;
@@ -193,26 +188,24 @@ td {
     width: calc(100% / 7);
     display: flex;
     justify-content: flex-end;
-    color: #fff;
+    color: white;
     font-size: 1.6em;
     border-right: 1px solid #777;
     font-family: monospace;
     transition: all .1s;
     padding: 10px 10px 0 0;
+    border-radius: 10%;
 }
 
 td:hover {
     cursor: pointer;
-    background-color: #555;
-}
+    border: 2px solid white;
 
-.mytoday {
-    color: red;
 }
 
 .weekend:hover {
     cursor: pointer;
-    background-color: #777;
+    border: 2px solid white;
 }
 
 .weekend {
@@ -222,7 +215,9 @@ td:hover {
 }
 
 .note {
+    background-color: #03a9f4;
     color: red;
+    border-radius: 10%;
 }
 
 .comment {
@@ -230,10 +225,14 @@ td:hover {
     height: 75px;
     display: block;
     font-size: 0.7em;
-    color: rgb(178, 226, 226);
+    color: greenyellow;
     margin-right: 10px;
     background: none;
     border: none;
     resize: none;
+}
+
+#monthSelect {
+    width: 100px;
     cursor: pointer;
 }

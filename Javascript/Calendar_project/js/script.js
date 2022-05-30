@@ -76,7 +76,7 @@ function createCalendar(elem, year, month) {
         new Date().getFullYear()
     );
     if (todayElement) {
-        todayElement.style.backgroundColor = "blue";
+        todayElement.style.backgroundColor = "#0059ff";
     }
 }
 
@@ -129,7 +129,7 @@ function addCalendarYearAndMonth() {
         createCalendar(root, days.getFullYear(), days.getMonth() + 1);
         document.querySelector(".year").innerHTML = days.getFullYear();
         document.querySelector(".mh").innerText = monthNames[days.getMonth()];
-        monthSelect.value = days.getMonth();
+        yDays = days.getFullYear();
     });
     monthSelect.addEventListener("change", () => {
         let month = parseInt(monthSelect.value, 10);
@@ -175,9 +175,6 @@ function note(td) {
     if (selectedDay && selectedDay !== td) {
         selectedDay.classList.remove("note");
     }
-
     selectedDay = td;
     td.classList.toggle("note");
-
-    selectedDay.querySelector(".comment").focus();
 }
