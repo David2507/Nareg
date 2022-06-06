@@ -326,12 +326,30 @@
 //     console.log(Math.sqrt(c * b));
 // }
 
+//
+// for (let i = 999; i >= 100; i--) {
+//     let a = Math.sqrt(i*19);
+//     let b = Math.floor(Math.sqrt(i*19));
+//     if (a-b === 0) {
+//         console.log(i);
+//         break;
+//     }
+// }
 
-for (let i = 999; i >= 100; i--) {
-    let a = Math.sqrt(i*19);
-    let b = Math.floor(Math.sqrt(i*19));
-    if (a-b === 0) {
-        console.log(i);
-        break;
-    }
-}
+
+// var m = [5, 4, 8, 6];
+// var m1 = "[5,4,8,6]";
+// var m2 = true;
+// var m3 = 25;
+// var m4;
+//
+// console.log(typeof m);
+// console.log(typeof m1);
+// console.log(typeof m2);
+// console.log(typeof m3);
+// console.log(typeof m4);
+// console.log(typeof m5);
+//
+// var a = "1";
+// var b = "5";
+// console.log(+a + +b);
