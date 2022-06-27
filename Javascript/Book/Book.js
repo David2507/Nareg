@@ -353,3 +353,50 @@
 // var a = "1";
 // var b = "5";
 // console.log(+a + +b);
+
+// let arr = [];
+// let end = 20;
+// let count = 2;
+// arr[0] = 0;
+// arr[1] = 1;
+//
+// for (let i = 2; i < end; i++) {
+//
+//     for (let j = 0; j < i; j++) {
+//         if (count === i) {
+//             arr.push(arr[i-1] + count + j);
+//         }
+//         if (count < i) {
+//             count++;
+//         }
+//
+//     }
+// }
+// console.log(arr);
+
+// let end = 23;
+// let arr = [];
+// let count = 2;
+// arr[0] = 0;
+// arr[1] = 1;
+// for (let i = 2; i < end; i += count) {
+//     arr.push(arr[arr.length - 1] + count);
+//     for (let j = 1; j < count; j++) {
+//         arr.push(arr[arr.length - 1] + 1);
+//     }
+//     count++;
+// }
+//
+// console.log(arr);
+
+// let a = 0;
+// if (a){
+//     console.log("a")
+// }else {
+//     console.log("b")
+// }
+
+// let a = 3;
+// let b = 4;
+// let c = Math.sqrt(Math.pow(a,2) + Math.pow(b, 2));
+// console.log(c);

@@ -15,7 +15,7 @@ const monthNames = [
     "September",
     "October",
     "November",
-    "Dectember",
+    "December",
 ];
 const weekNames = [
     "Monday",
