@@ -86,6 +86,7 @@ console.log(objectString("green"));
 
 console.log("_________________________");
 console.log();
+
 /**
  * Exercise 5.
  * Write a parametric function that gets 3 parameter arrays and returns a new array
