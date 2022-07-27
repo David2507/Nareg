@@ -400,3 +400,354 @@
 // let b = 4;
 // let c = Math.sqrt(Math.pow(a,2) + Math.pow(b, 2));
 // console.log(c);
+
+// function leapYear(arr) {
+//     let newArray = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 4 === 0) {
+//             newArray[i] = arr[i];
+//         } else {
+//             newArray[i] = "isn't leap year";
+//         }
+//     }
+//     console.log(newArray);
+// }
+//
+// leapYear([2000, 2001, 2002, 2003, 2004, 2005]);
+
+// function makeres(a, b, string) {
+//     let result;
+//     let r = 5;
+//     if (string === "qarakusi") {
+//         result = a * a;
+//     } else if (string === "shrjan") {
+//         result = Math.PI * (r * r);
+//     } else if (string === "uxxankyun") {
+//         result = a * b;
+//     } else if (string === "uxxankyun erankyun") {
+//         result = a * b / 2;
+//     } else {
+//         result = "nman patkeri makers chem hashvum";
+//     }
+//     return result;
+// }
+//
+// console.log(makeres(5, 7, "shrjan"));
+// function numbers(tiv1, tiv2){
+//     if (typeof tiv1 === "number"){
+//
+//         if(tiv1 === 50 || tiv2 === 50 || tiv1+tiv2 === 50){
+//             return true;
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+//     return numbers
+// }
+// console.log(numbers(25, 25));
+
+// function containNumber() {
+//     let array = [1, 2, 3, 4, 5];
+//     let number = 3;
+//     let boolean = false;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === number) {
+//             console.log("you win");
+//             boolean = true;
+//         }
+//     }
+//     if (!boolean) {
+//         console.log("try again");
+//     }
+// }
+//
+// containNumber();
+
+// function containNumber(number) {
+//     if (typeof number === "number") {
+//         if (number > 0 && number < 100 || number > 200 && number < 300) {
+//             return true;
+//         } else {
+//             return false;
+//         }
+//
+//     }
+//     return "please send number";
+// }
+//
+// console.log(containNumber(25));
+
+// function replaceArray(arr) {
+//     let newArray = [];
+//     let j = 0;
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         newArray[j] = arr[i];
+//         j++;
+//     }
+//     return newArray;
+// }
+//
+// console.log(replaceArray([45, 8, 6, 56, 9, 5]));
+
+// function containsNumber(number) {
+//     if (number >= 1 && number <= 5) {
+//         return {
+//             workingDay: number,
+//         };
+//     } else if (number === 6 || number === 7) {
+//         return {
+//             weekend: number,
+//         };
+//     }
+//     return "parameter default value";
+// }
+//
+// console.log(containsNumber(9));
+
+// let obj = {
+//     name: "Karen",
+//     surName: "Petrosyan",
+// }
+//
+// function stringArray(...strings) {
+//     let array = [2000, 2001, 2002, 2003, 2004, 2005];
+//     let array2 = [...array];
+//
+//
+//     for (let i = 0; i < strings.length; i++) {
+//         array[i] = strings[i];
+//     }
+//     let newArray = [];
+//     for (let newArrayElement of array) {
+//         newArray += "-" + newArrayElement;
+//     }
+//     return newArray;
+// }
+//
+// console.log(stringArray("A", "B", "C", "D", "E", "F"));
+
+
+// function operatorAndNumber(operator, ...numbers) {
+//     let result;
+//     if (operator === "+" || operator === "-") {
+//         result = 0;
+//     } else result = 1;
+//
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (operator === "+") {
+//             result += numbers[i];
+//         } else if (operator === "-") {
+//             result -= numbers[i];
+//         } else if (operator === "*") {
+//             result *= numbers[i];
+//         } else if (operator === "/") {
+//             result /= numbers[i];
+//         }
+//     }
+//     return result;
+// }
+//
+// console.log(operatorAndNumber("*", 8, 54, 22, 15, 288));
+
+// let x = 4 * "barev";
+// console.log(x);
+// console.log(x == NaN);
+
+// function objectArray(...param) {
+//     let obj = {
+//         String: [],
+//         number: [],
+//         boolean: [],
+//         symbol: [],
+//     }
+//     let st = 0;
+//     let num = 0;
+//     let bool = 0;
+//     let sim = 0;
+//
+//     for (let i = 0; i < param.length; i++) {
+//         if (typeof param[i] === "string") {
+//             obj.String[st] = param[i];
+//             st++;
+//         } else if (typeof param[i] === "number") {
+//             obj.number[num] = param[i];
+//             num++;
+//         } else if (typeof param[i] === "boolean") {
+//             obj.boolean[bool] = param[i];
+//             bool++;
+//         } else if (typeof param[i] === "symbol") {
+//             obj.symbol[sim] = param[i];
+//             sim++;
+//         }
+//     }
+//     return obj;
+// }
+//
+// console.log(objectArray(Symbol("a"), 5, Symbol("c"), true, "a", 8, "b", 99, false));
+//
+// function objectArray(...numbers) {
+//     let obj = {
+//         even: [],
+//         odd: [],
+//     }
+//     let even = 0;
+//     let odd = 0;
+//
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] % 2 === 0) {
+//             obj.even[even] = numbers[i];
+//             even++;
+//         } else {
+//             obj.odd[odd] = numbers[i];
+//             odd++;
+//         }
+//     }
+//     return obj;
+// }
+//
+// console.log(objectArray(5, 18, 9, 6, 12, 5, 8, 63, 7));
+//
+// function maxOddNumber(...numbers) {
+//     let maxOdd = 0;
+//
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] % 2 === 1 && numbers[i] > maxOdd) {
+//             maxOdd = numbers[i];
+//         }
+//     }
+//     return maxOdd;
+// }
+//
+// console.log(maxOddNumber(5, 18, 9, 6, 12, 5, 8, 63, 7));
+
+// function isPalindrome(string) {
+//     let strLen = string.length;
+//     for (let i = 0; i < strLen / 2; i++) {
+//         if (string[i] !== string[strLen - 1 - i]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+//
+// console.log(isPalindrome("katak"));
+
+
+// function repetitiveString(...strings) {
+//     let index = 1;
+//     let m = 0;
+//     let str;
+//     for (let i = 0; i < strings.length; i++) {
+//         for (let j = i; j < strings.length; j++) {
+//             if (strings[i] === strings[j])
+//                 m++;
+//             if (index < m) {
+//                 index = m;
+//                 str = strings[i];
+//             }
+//         }
+//         m = 0;
+//     }
+//     return str + " tary handipum e " + index + " angam";
+// }
+//
+// console.log(repetitiveString("a", "b", "b", "a", "a", "a", "b", "c", "d", "d", "d"));
+// function esim(number) {
+//     let a = number.toString();
+//     let result = false;
+//     for (let i = 0; i < a.length-1; i++) {
+//         result = a[i] < a[i + 1];
+//     }
+//     return result;
+//
+// }
+//
+// console.log(esim(4563));
+// function arr(array) {
+//     let newArray = [];
+//     let index = 0;
+//     for (let i of array) {
+//         if (newArray.indexOf(i) === -1) {
+//             newArray[index] = i;
+//             index++;
+//         }
+//     }
+//     return newArray;
+// }
+//
+// console.log(arr([1, 2, 2, 3]));
+
+// function findGivenValue(array, value) {
+//     let result;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === value) {
+//             result = array[i];
+//             return result;
+//         } else {
+//             result = null;
+//         }
+//     }
+//     return result;
+// }
+//
+// console.log(findGivenValue([45, true, "Karen", "Valod"], "Valo"));
+
+// function thisTypeArray(array1, array2, type) {
+//     let arrays = [...array1, ...array2];
+//     let newArray = [];
+//     let newObject = {};
+//     let index = 0;
+//     for (let i = 0; i < arrays.length; i++) {
+//         if (typeof arrays[i] === type) {
+//             newArray[index] = arrays[i];
+//             newObject[type] = [...newArray];
+//             index++;
+//         }
+//     }
+//     return newObject;
+// }
+//
+// console.log(thisTypeArray([1, 5, 7, "Valod", true], ["Garnik", false, 77], "number"));
+
+// let person = {
+//     name: "Valod",
+//     surname: "Karapetyan",
+//     age: 25,
+//     height: 187,
+//     married: true,
+// }
+//
+// function swap(object){
+//    let swapObject = {};
+//     for(let key in object){
+//         swapObject[object[key]] = key;
+//     }
+//     return swapObject;
+// }
+//
+// console.log(swap(person));
+
+// function sortingArray(array) {
+//     let object = {
+//         truthyValues: [],
+//         falsyValues: [],
+//     }
+//     let indexTruthy = 0;
+//     let indexFalsy = 0;
+//
+//    array.filter(function(value) {
+//        if (!!value) {
+//            object.truthyValues[indexTruthy] = value;
+//            indexTruthy++;
+//        } else {
+//            object.falsyValues[indexFalsy] = value;
+//            indexFalsy++;
+//        }
+//    });
+//     return object;
+// }
+//
+// console.log(sortingArray([NaN,1,"","Aram",null,true,false,"a",10,0]));
+
+
